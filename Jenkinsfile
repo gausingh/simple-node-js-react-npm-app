@@ -6,4 +6,8 @@ node {
     stage('checkout') {
         checkout scm
     }
+    stage('build') {
+        def docker = docker.image();
+        echo ${docker}
+    }
 }
