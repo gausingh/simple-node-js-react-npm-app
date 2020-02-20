@@ -1,7 +1,7 @@
 #!groovy
 
 // Load shared pipeline libraries
-@Library(['velox', 'velox-goa']) _
+@Library(['velox']) _
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '14', numToKeepStr: ''))]);
 
