@@ -8,6 +8,13 @@
 
 veloxPipeline(slackChannel: 'test', nodeVersion: '10', npmVersion: '^6.9.0') { p ->
 
+p.common {
+
+ stage('build') {
+      echo 'Test Message'
+ }
+
+}
 
 
 
