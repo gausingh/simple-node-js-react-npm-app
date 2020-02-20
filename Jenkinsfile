@@ -10,6 +10,6 @@ veloxPipeline(slackChannel: who.builds.channel, nodeVersion: '10', npmVersion: '
 
 
 
-}
+
 
 }
