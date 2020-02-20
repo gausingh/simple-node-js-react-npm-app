@@ -5,6 +5,12 @@
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '14', numToKeepStr: ''))]);
 
-veloxPipeline() {
-    echo 'Test Message';
+
+veloxPipeline(slackChannel: who.builds.channel, nodeVersion: '10', npmVersion: '^6.9.0') { p ->
+
+p.common {
+
+echo 'Test Message';
+
+}
 }
