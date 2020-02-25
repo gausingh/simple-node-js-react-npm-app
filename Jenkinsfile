@@ -28,7 +28,7 @@ properties([
 // Load shared pipeline libraries
 @Library(['velox']) _
 
-echo "Build is  ${env.BUILD_ID}"
+echo "Build is  ${env.CHANGE_AUTHOR}"
 
 
 veloxPipeline(slackChannel: 'test', nodeVersion: '10', npmVersion: '^6.9.0') { p ->
